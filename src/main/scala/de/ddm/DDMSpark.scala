@@ -23,7 +23,7 @@ object DDMSpark extends App {
     }
     val options = nextOption(Map(), args.toList)
 
-    val path = options.getOrElse('path, "data/TPCH")
+    val path = options.getOrElse('path, "data/TPCH/TPCH")
     val cores = options.getOrElse('cores, 32)
     val partitions = options.getOrElse('partitions, 64)
 
@@ -60,13 +60,13 @@ object DDMSpark extends App {
     // Spark Tutorial
     //------------------------------------------------------------------------------------------------------------------
 
-    Tutorial.execute(spark)
+    //Tutorial.execute(spark)
 
     //------------------------------------------------------------------------------------------------------------------
     // Longest Common Substring Search
     //------------------------------------------------------------------------------------------------------------------
 
-    time {LongestCommonSubstring.discoverLCSs("students2", spark)}
+    //time {LongestCommonSubstring.discoverLCSs("students2", spark)}
 
     //------------------------------------------------------------------------------------------------------------------
     // Inclusion Dependency Discovery (Homework)
