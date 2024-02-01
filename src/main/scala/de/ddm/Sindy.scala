@@ -34,5 +34,7 @@ object Sindy {
 
     inclusionsSorted.foreach(column => print(column._1 + " < " + column._2.mkString(", ")+ "\n"))
 
+    //TODO: comments
+
   }
 }
